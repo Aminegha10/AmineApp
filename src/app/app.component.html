@@ -1,6 +1,8 @@
-<app-navbar></app-navbar>
-<div class="w-full flex justify-between">
-  <app-left-side-bars></app-left-side-bars>
-  <router-outlet></router-outlet>
-  <app-right-side-bars></app-right-side-bars>
+<div class="max-h-screen flex-col overflow-hidden">
+  <app-navbar></app-navbar>
+  <div class="w-full flex flex-1 justify-between">
+    <app-left-side-bars></app-left-side-bars>
+    <router-outlet></router-outlet>
+    <app-right-side-bars></app-right-side-bars>
+  </div>
 </div>

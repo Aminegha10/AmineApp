@@ -1,5 +1,5 @@
-<div class="min-h-screen bg-stone-50 pt-16">
-  <div class="max-w-5xl mx-auto px-4 py-8">
+<div class="min-h-screen bg-stone-50 ">
+  <div class="w-[880px] mx-auto px-4 py-8">
     <div class="mb-8">
       <h1 class="text-4xl font-bold text-slate-900 mb-2">Settings</h1>
       <p class="text-slate-600 text-lg">
@@ -9,16 +9,46 @@
 
     <!-- Tabs -->
     <hlm-tabs tab="Profile" class="w-full">
-      <hlm-tabs-list class="grid w-full grid-cols-4 bg-white rounded-xl p-1 shadow-sm border border-stone-200" aria-label="tabs example">
-        <button hlmTabsTrigger="Profile" class="rounded-lg font-semibold text-emerald-600 bg-emerald-50 shadow-sm">Profile</button>
-        <button hlmTabsTrigger="Notification" class="rounded-lg font-medium text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200">Notifications</button>
-        <button hlmTabsTrigger="Privacy" class="rounded-lg font-medium text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200">Privacy</button>
-        <button hlmTabsTrigger="Account" class="rounded-lg font-medium text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200">Account</button>
+      <hlm-tabs-list
+        class="grid w-full grid-cols-4 bg-white rounded-xl p-1 shadow-sm border border-stone-200"
+        aria-label="tabs example"
+      >
+        <button
+          hlmTabsTrigger="Profile"
+          class="rounded-lg font-semibold text-emerald-600 bg-emerald-50 shadow-sm"
+        >
+          Profile
+        </button>
+        <button
+          hlmTabsTrigger="Notification"
+          class="rounded-lg font-medium text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200"
+        >
+          Notifications
+        </button>
+        <button
+          hlmTabsTrigger="Privacy"
+          class="rounded-lg font-medium text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200"
+        >
+          Privacy
+        </button>
+        <button
+          hlmTabsTrigger="Account"
+          class="rounded-lg font-medium text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200"
+        >
+          Account
+        </button>
       </hlm-tabs-list>
 
       <!-- Profile Tab -->
-      <div hlmTabsContent="Profile" hlmCard class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200">
-        <div hlmCardHeader class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-t-xl">
+      <div
+        hlmTabsContent="Profile"
+        hlmCard
+        class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200"
+      >
+        <div
+          hlmCardHeader
+          class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-t-xl"
+        >
           <h2 hlmCardTitle class="text-2xl font-bold text-slate-900">
             Profile Information
           </h2>
@@ -36,7 +66,9 @@
                 src="/placeholder.svg?height=96&width=96"
                 alt="Profile"
               />
-              <span hlmAvatarFallback class="text-xl font-bold text-emerald-600">XA</span>
+              <span hlmAvatarFallback class="text-xl font-bold text-emerald-600"
+                >XA</span
+              >
             </hlm-avatar>
             <div>
               <button
@@ -76,11 +108,20 @@
           <!-- Basic Info -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="space-y-2">
-              <label class="text-sm font-semibold text-slate-700">Full Name</label>
-              <input hlmInput type="text" value="X_AE_C-921" class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg" />
+              <label class="text-sm font-semibold text-slate-700"
+                >Full Name</label
+              >
+              <input
+                hlmInput
+                type="text"
+                value="X_AE_C-921"
+                class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg"
+              />
             </div>
             <div class="space-y-2">
-              <label class="text-sm font-semibold text-slate-700">Username</label>
+              <label class="text-sm font-semibold text-slate-700"
+                >Username</label
+              >
               <input
                 hlmInput
                 type="text"
@@ -198,21 +239,32 @@
                 </svg>
                 <span>Location</span>
               </label>
-              <input hlmInput type="text" value="Osaka, Japan" class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg" />
+              <input
+                hlmInput
+                type="text"
+                value="Osaka, Japan"
+                class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg"
+              />
             </div>
           </div>
 
           <!-- Bio -->
           <div class="space-y-2">
             <label class="text-sm font-semibold text-slate-700">Bio</label>
-            <textarea hlmInput rows="4" class="w-full resize-none border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg">
+            <textarea
+              hlmInput
+              rows="4"
+              class="w-full resize-none border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg"
+            >
 Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm not crunching numbers or optimizing algorithms, you can find me hitting the gym.</textarea
             >
             <p class="text-sm text-slate-500">245/500 characters</p>
           </div>
 
           <!-- Stats -->
-          <div class="grid grid-cols-3 gap-6 p-6 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
+          <div
+            class="grid grid-cols-3 gap-6 p-6 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl border border-emerald-100"
+          >
             <div class="text-center">
               <p class="text-3xl font-bold text-slate-900">548</p>
               <p class="text-sm text-slate-600 font-medium">Posts</p>
@@ -227,13 +279,25 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
             </div>
           </div>
 
-          <button hlmBtn class="w-full md:w-auto bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">Save Changes</button>
+          <button
+            hlmBtn
+            class="w-full md:w-auto bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+          >
+            Save Changes
+          </button>
         </div>
       </div>
 
       <!-- Notifications Tab  -->
-      <div hlmCard hlmTabsContent="Notification" class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200">
-        <div hlmCardHeader class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-t-xl">
+      <div
+        hlmCard
+        hlmTabsContent="Notification"
+        class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200"
+      >
+        <div
+          hlmCardHeader
+          class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-t-xl"
+        >
           <h2 hlmCardTitle class="text-2xl font-bold text-slate-900">
             Notification Preferences
           </h2>
@@ -244,7 +308,9 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
 
         <div hlmCardContent class="space-y-8 p-8">
           <div class="space-y-6">
-            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+            <div
+              class="flex items-center justify-between p-4 bg-stone-50 rounded-lg"
+            >
               <div>
                 <h4 class="text-sm font-semibold text-slate-900">
                   Email Notifications
@@ -262,7 +328,9 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
               </button>
             </div>
 
-            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+            <div
+              class="flex items-center justify-between p-4 bg-stone-50 rounded-lg"
+            >
               <div>
                 <h4 class="text-sm font-semibold text-slate-900">
                   Push Notifications
@@ -280,7 +348,9 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
               </button>
             </div>
 
-            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+            <div
+              class="flex items-center justify-between p-4 bg-stone-50 rounded-lg"
+            >
               <div>
                 <h4 class="text-sm font-semibold text-slate-900">
                   SMS Notifications
@@ -302,11 +372,17 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
           <div hlmSeparator class="bg-stone-200"></div>
 
           <div class="space-y-6">
-            <h4 class="font-bold text-slate-900 text-lg">Activity Notifications</h4>
+            <h4 class="font-bold text-slate-900 text-lg">
+              Activity Notifications
+            </h4>
 
-            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+            <div
+              class="flex items-center justify-between p-4 bg-stone-50 rounded-lg"
+            >
               <div>
-                <h4 class="text-sm font-semibold text-slate-900">New Followers</h4>
+                <h4 class="text-sm font-semibold text-slate-900">
+                  New Followers
+                </h4>
                 <p class="text-sm text-slate-600">When someone follows you</p>
               </div>
               <button
@@ -318,7 +394,9 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
               </button>
             </div>
 
-            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+            <div
+              class="flex items-center justify-between p-4 bg-stone-50 rounded-lg"
+            >
               <div>
                 <h4 class="text-sm font-semibold text-slate-900">Likes</h4>
                 <p class="text-sm text-slate-600">
@@ -334,7 +412,9 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
               </button>
             </div>
 
-            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+            <div
+              class="flex items-center justify-between p-4 bg-stone-50 rounded-lg"
+            >
               <div>
                 <h4 class="text-sm font-semibold text-slate-900">Comments</h4>
                 <p class="text-sm text-slate-600">
@@ -351,13 +431,25 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
             </div>
           </div>
 
-          <button hlmBtn class="w-full md:w-auto bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">Save Preferences</button>
+          <button
+            hlmBtn
+            class="w-full md:w-auto bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+          >
+            Save Preferences
+          </button>
         </div>
       </div>
 
       <!-- Privacy Tab -->
-      <div hlmCard hlmTabsContent="Privacy" class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200">
-        <div hlmCardHeader class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-t-xl">
+      <div
+        hlmCard
+        hlmTabsContent="Privacy"
+        class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200"
+      >
+        <div
+          hlmCardHeader
+          class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-t-xl"
+        >
           <h2 hlmCardTitle class="text-2xl font-bold text-slate-900">
             Privacy Settings
           </h2>
@@ -368,7 +460,9 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
 
         <div hlmCardContent class="space-y-8 p-8">
           <div class="space-y-6">
-            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+            <div
+              class="flex items-center justify-between p-4 bg-stone-50 rounded-lg"
+            >
               <div>
                 <h4 class="text-sm font-semibold text-slate-900">Show Email</h4>
                 <p class="text-sm text-slate-600">
@@ -384,7 +478,9 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
               </button>
             </div>
 
-            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+            <div
+              class="flex items-center justify-between p-4 bg-stone-50 rounded-lg"
+            >
               <div>
                 <h4 class="text-sm font-semibold text-slate-900">Show Phone</h4>
                 <p class="text-sm text-slate-600">
@@ -400,10 +496,16 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
               </button>
             </div>
 
-            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+            <div
+              class="flex items-center justify-between p-4 bg-stone-50 rounded-lg"
+            >
               <div>
-                <h4 class="text-sm font-semibold text-slate-900">Allow Tagging</h4>
-                <p class="text-sm text-slate-600">Let others tag you in posts</p>
+                <h4 class="text-sm font-semibold text-slate-900">
+                  Allow Tagging
+                </h4>
+                <p class="text-sm text-slate-600">
+                  Let others tag you in posts
+                </p>
               </div>
               <button
                 class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-emerald-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 shadow-sm"
@@ -414,7 +516,9 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
               </button>
             </div>
 
-            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+            <div
+              class="flex items-center justify-between p-4 bg-stone-50 rounded-lg"
+            >
               <div>
                 <h4 class="text-sm font-semibold text-slate-900">
                   Allow Messaging
@@ -433,13 +537,25 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
             </div>
           </div>
 
-          <button hlmBtn class="w-full md:w-auto bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">Save Settings</button>
+          <button
+            hlmBtn
+            class="w-full md:w-auto bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+          >
+            Save Settings
+          </button>
         </div>
       </div>
 
       <!-- Account Tab  -->
-      <div hlmCard hlmTabsContent="Account" class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200">
-        <div hlmCardHeader class="bg-gradient-to-r from-slate-50 to-stone-50 rounded-t-xl">
+      <div
+        hlmCard
+        hlmTabsContent="Account"
+        class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200"
+      >
+        <div
+          hlmCardHeader
+          class="bg-gradient-to-r from-slate-50 to-stone-50 rounded-t-xl"
+        >
           <h2 hlmCardTitle class="text-2xl font-bold text-slate-900">
             Account Settings
           </h2>
@@ -454,36 +570,64 @@ Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm 
               <label class="text-sm font-semibold text-slate-700"
                 >Current Password</label
               >
-              <input hlmInput type="password" class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg" />
+              <input
+                hlmInput
+                type="password"
+                class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg"
+              />
             </div>
             <div class="space-y-2">
               <label class="text-sm font-semibold text-slate-700"
                 >New Password</label
               >
-              <input hlmInput type="password" class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg" />
+              <input
+                hlmInput
+                type="password"
+                class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg"
+              />
             </div>
             <div class="space-y-2">
               <label class="text-sm font-semibold text-slate-700"
                 >Confirm New Password</label
               >
-              <input hlmInput type="password" class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg" />
+              <input
+                hlmInput
+                type="password"
+                class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg"
+              />
             </div>
           </div>
 
-          <button hlmBtn class="w-full md:w-auto bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">Update Password</button>
+          <button
+            hlmBtn
+            class="w-full md:w-auto bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+          >
+            Update Password
+          </button>
 
           <div hlmSeparator class="bg-stone-200"></div>
 
           <div class="space-y-6">
             <h4 class="font-bold text-rose-600 text-lg">Danger Zone</h4>
-            <div hlmCard class="border-rose-200 bg-gradient-to-r from-rose-50 to-red-50 rounded-xl">
+            <div
+              hlmCard
+              class="border-rose-200 bg-gradient-to-r from-rose-50 to-red-50 rounded-xl"
+            >
               <div hlmCardContent class="p-6">
-                <h5 class="font-bold text-rose-800 mb-2 text-lg">Delete Account</h5>
+                <h5 class="font-bold text-rose-800 mb-2 text-lg">
+                  Delete Account
+                </h5>
                 <p class="text-sm text-rose-700 mb-6 leading-relaxed">
                   Once you delete your account, there is no going back. Please
                   be certain.
                 </p>
-                <button hlmBtn variant="destructive" class="bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-700 hover:to-red-700 font-semibold px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">Delete Account</button>
+                <button
+                  hlmBtn
+                  variant="destructive"
+                  class="bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-700 hover:to-red-700 font-semibold px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+                >
+                  Delete Account
+                </button>
               </div>
             </div>
           </div>

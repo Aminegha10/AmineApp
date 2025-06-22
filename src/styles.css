@@ -4,6 +4,28 @@
 @import "tailwindcss";
 @import '@spartan-ng/brain/hlm-tailwind-preset.css';
 
+.ScrollBarNone{
+    scrollbar-width: none;
+}
+/* Apply this globally or to a specific container */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2; /* Light grey to blend with your UI */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00844E; /* Green accent */
+  border-radius: 10px;
+  border: 2px solid #f2f2f2; /* Creates a gap around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #006f42; /* Slightly darker on hover */
+}
 
 :root {
 --font-sans: ''
