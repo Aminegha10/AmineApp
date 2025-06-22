@@ -1,0 +1,494 @@
+<div class="min-h-screen bg-stone-50 pt-16">
+  <div class="max-w-5xl mx-auto px-4 py-8">
+    <div class="mb-8">
+      <h1 class="text-4xl font-bold text-slate-900 mb-2">Settings</h1>
+      <p class="text-slate-600 text-lg">
+        Manage your account settings and preferences
+      </p>
+    </div>
+
+    <!-- Tabs -->
+    <hlm-tabs tab="Profile" class="w-full">
+      <hlm-tabs-list class="grid w-full grid-cols-4 bg-white rounded-xl p-1 shadow-sm border border-stone-200" aria-label="tabs example">
+        <button hlmTabsTrigger="Profile" class="rounded-lg font-semibold text-emerald-600 bg-emerald-50 shadow-sm">Profile</button>
+        <button hlmTabsTrigger="Notification" class="rounded-lg font-medium text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200">Notifications</button>
+        <button hlmTabsTrigger="Privacy" class="rounded-lg font-medium text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200">Privacy</button>
+        <button hlmTabsTrigger="Account" class="rounded-lg font-medium text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200">Account</button>
+      </hlm-tabs-list>
+
+      <!-- Profile Tab -->
+      <div hlmTabsContent="Profile" hlmCard class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200">
+        <div hlmCardHeader class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-t-xl">
+          <h2 hlmCardTitle class="text-2xl font-bold text-slate-900">
+            Profile Information
+          </h2>
+          <p hlmCardDescription class="text-slate-600 mt-2">
+            Update your profile details and public information
+          </p>
+        </div>
+
+        <div hlmCardContent class="space-y-8 p-8">
+          <!-- Profile Picture -->
+          <div class="flex items-center space-x-6">
+            <hlm-avatar class="w-24 h-24 ring-4 ring-emerald-100">
+              <img
+                hlmAvatarImage
+                src="/placeholder.svg?height=96&width=96"
+                alt="Profile"
+              />
+              <span hlmAvatarFallback class="text-xl font-bold text-emerald-600">XA</span>
+            </hlm-avatar>
+            <div>
+              <button
+                hlmBtn
+                variant="outline"
+                class="flex items-center space-x-2 border-emerald-200 text-emerald-700 hover:bg-emerald-50 hover:border-emerald-300 transition-all duration-200"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+                <span>Change Photo</span>
+              </button>
+              <p class="text-sm text-slate-500 mt-2">
+                JPG, GIF or PNG. 1MB max.
+              </p>
+            </div>
+          </div>
+
+          <div hlmSeparator class="bg-stone-200"></div>
+
+          <!-- Basic Info -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label class="text-sm font-semibold text-slate-700">Full Name</label>
+              <input hlmInput type="text" value="X_AE_C-921" class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg" />
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-semibold text-slate-700">Username</label>
+              <input
+                hlmInput
+                type="text"
+                value="@theobliterator"
+                class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg"
+              />
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label
+                class="flex items-center space-x-2 text-sm font-semibold text-slate-700"
+              >
+                <svg
+                  class="w-4 h-4 text-emerald-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                  ></path>
+                </svg>
+                <span>Email</span>
+              </label>
+              <input
+                hlmInput
+                type="email"
+                value="hello@slothui.com"
+                class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg"
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="flex items-center space-x-2 text-sm font-semibold text-slate-700"
+              >
+                <svg
+                  class="w-4 h-4 text-emerald-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  ></path>
+                </svg>
+                <span>Phone</span>
+              </label>
+              <input
+                hlmInput
+                type="tel"
+                value="+123 456 789 000"
+                class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label
+                class="flex items-center space-x-2 text-sm font-semibold text-slate-700"
+              >
+                <svg
+                  class="w-4 h-4 text-emerald-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9"
+                  ></path>
+                </svg>
+                <span>Website</span>
+              </label>
+              <input
+                hlmInput
+                type="url"
+                value="www.slothui.com"
+                class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg"
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="flex items-center space-x-2 text-sm font-semibold text-slate-700"
+              >
+                <svg
+                  class="w-4 h-4 text-emerald-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+                <span>Location</span>
+              </label>
+              <input hlmInput type="text" value="Osaka, Japan" class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg" />
+            </div>
+          </div>
+
+          <!-- Bio -->
+          <div class="space-y-2">
+            <label class="text-sm font-semibold text-slate-700">Bio</label>
+            <textarea hlmInput rows="4" class="w-full resize-none border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg">
+Hi there! 👋 I'm X_AE_A-19, an AI enthusiast and fitness aficionado. When I'm not crunching numbers or optimizing algorithms, you can find me hitting the gym.</textarea
+            >
+            <p class="text-sm text-slate-500">245/500 characters</p>
+          </div>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-6 p-6 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
+            <div class="text-center">
+              <p class="text-3xl font-bold text-slate-900">548</p>
+              <p class="text-sm text-slate-600 font-medium">Posts</p>
+            </div>
+            <div class="text-center">
+              <p class="text-3xl font-bold text-slate-900">12.7K</p>
+              <p class="text-sm text-slate-600 font-medium">Followers</p>
+            </div>
+            <div class="text-center">
+              <p class="text-3xl font-bold text-slate-900">221</p>
+              <p class="text-sm text-slate-600 font-medium">Following</p>
+            </div>
+          </div>
+
+          <button hlmBtn class="w-full md:w-auto bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">Save Changes</button>
+        </div>
+      </div>
+
+      <!-- Notifications Tab  -->
+      <div hlmCard hlmTabsContent="Notification" class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200">
+        <div hlmCardHeader class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-t-xl">
+          <h2 hlmCardTitle class="text-2xl font-bold text-slate-900">
+            Notification Preferences
+          </h2>
+          <p hlmCardDescription class="text-slate-600 mt-2">
+            Choose how you want to be notified about activity
+          </p>
+        </div>
+
+        <div hlmCardContent class="space-y-8 p-8">
+          <div class="space-y-6">
+            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+              <div>
+                <h4 class="text-sm font-semibold text-slate-900">
+                  Email Notifications
+                </h4>
+                <p class="text-sm text-slate-600">
+                  Receive notifications via email
+                </p>
+              </div>
+              <button
+                class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-emerald-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 shadow-sm"
+              >
+                <span
+                  class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"
+                ></span>
+              </button>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+              <div>
+                <h4 class="text-sm font-semibold text-slate-900">
+                  Push Notifications
+                </h4>
+                <p class="text-sm text-slate-600">
+                  Receive push notifications in your browser
+                </p>
+              </div>
+              <button
+                class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-emerald-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 shadow-sm"
+              >
+                <span
+                  class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"
+                ></span>
+              </button>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+              <div>
+                <h4 class="text-sm font-semibold text-slate-900">
+                  SMS Notifications
+                </h4>
+                <p class="text-sm text-slate-600">
+                  Receive notifications via text message
+                </p>
+              </div>
+              <button
+                class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-stone-300 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 shadow-sm"
+              >
+                <span
+                  class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-0"
+                ></span>
+              </button>
+            </div>
+          </div>
+
+          <div hlmSeparator class="bg-stone-200"></div>
+
+          <div class="space-y-6">
+            <h4 class="font-bold text-slate-900 text-lg">Activity Notifications</h4>
+
+            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+              <div>
+                <h4 class="text-sm font-semibold text-slate-900">New Followers</h4>
+                <p class="text-sm text-slate-600">When someone follows you</p>
+              </div>
+              <button
+                class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-emerald-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 shadow-sm"
+              >
+                <span
+                  class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"
+                ></span>
+              </button>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+              <div>
+                <h4 class="text-sm font-semibold text-slate-900">Likes</h4>
+                <p class="text-sm text-slate-600">
+                  When someone likes your posts
+                </p>
+              </div>
+              <button
+                class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-emerald-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 shadow-sm"
+              >
+                <span
+                  class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"
+                ></span>
+              </button>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+              <div>
+                <h4 class="text-sm font-semibold text-slate-900">Comments</h4>
+                <p class="text-sm text-slate-600">
+                  When someone comments on your posts
+                </p>
+              </div>
+              <button
+                class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-emerald-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 shadow-sm"
+              >
+                <span
+                  class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"
+                ></span>
+              </button>
+            </div>
+          </div>
+
+          <button hlmBtn class="w-full md:w-auto bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">Save Preferences</button>
+        </div>
+      </div>
+
+      <!-- Privacy Tab -->
+      <div hlmCard hlmTabsContent="Privacy" class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200">
+        <div hlmCardHeader class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-t-xl">
+          <h2 hlmCardTitle class="text-2xl font-bold text-slate-900">
+            Privacy Settings
+          </h2>
+          <p hlmCardDescription class="text-slate-600 mt-2">
+            Control who can see your information and interact with you
+          </p>
+        </div>
+
+        <div hlmCardContent class="space-y-8 p-8">
+          <div class="space-y-6">
+            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+              <div>
+                <h4 class="text-sm font-semibold text-slate-900">Show Email</h4>
+                <p class="text-sm text-slate-600">
+                  Display your email on your profile
+                </p>
+              </div>
+              <button
+                class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-stone-300 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 shadow-sm"
+              >
+                <span
+                  class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-0"
+                ></span>
+              </button>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+              <div>
+                <h4 class="text-sm font-semibold text-slate-900">Show Phone</h4>
+                <p class="text-sm text-slate-600">
+                  Display your phone number on your profile
+                </p>
+              </div>
+              <button
+                class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-stone-300 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 shadow-sm"
+              >
+                <span
+                  class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-0"
+                ></span>
+              </button>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+              <div>
+                <h4 class="text-sm font-semibold text-slate-900">Allow Tagging</h4>
+                <p class="text-sm text-slate-600">Let others tag you in posts</p>
+              </div>
+              <button
+                class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-emerald-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 shadow-sm"
+              >
+                <span
+                  class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"
+                ></span>
+              </button>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-stone-50 rounded-lg">
+              <div>
+                <h4 class="text-sm font-semibold text-slate-900">
+                  Allow Messaging
+                </h4>
+                <p class="text-sm text-slate-600">
+                  Let others send you direct messages
+                </p>
+              </div>
+              <button
+                class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-emerald-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 shadow-sm"
+              >
+                <span
+                  class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"
+                ></span>
+              </button>
+            </div>
+          </div>
+
+          <button hlmBtn class="w-full md:w-auto bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">Save Settings</button>
+        </div>
+      </div>
+
+      <!-- Account Tab  -->
+      <div hlmCard hlmTabsContent="Account" class="space-y-6 mt-8 bg-white rounded-xl shadow-sm border border-stone-200">
+        <div hlmCardHeader class="bg-gradient-to-r from-slate-50 to-stone-50 rounded-t-xl">
+          <h2 hlmCardTitle class="text-2xl font-bold text-slate-900">
+            Account Settings
+          </h2>
+          <p hlmCardDescription class="text-slate-600 mt-2">
+            Manage your account security and preferences
+          </p>
+        </div>
+
+        <div hlmCardContent class="space-y-8 p-8">
+          <div class="space-y-6">
+            <div class="space-y-2">
+              <label class="text-sm font-semibold text-slate-700"
+                >Current Password</label
+              >
+              <input hlmInput type="password" class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg" />
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-semibold text-slate-700"
+                >New Password</label
+              >
+              <input hlmInput type="password" class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg" />
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-semibold text-slate-700"
+                >Confirm New Password</label
+              >
+              <input hlmInput type="password" class="w-full border-stone-300 focus:border-emerald-500 focus:ring-emerald-500 rounded-lg" />
+            </div>
+          </div>
+
+          <button hlmBtn class="w-full md:w-auto bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white font-semibold px-8 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">Update Password</button>
+
+          <div hlmSeparator class="bg-stone-200"></div>
+
+          <div class="space-y-6">
+            <h4 class="font-bold text-rose-600 text-lg">Danger Zone</h4>
+            <div hlmCard class="border-rose-200 bg-gradient-to-r from-rose-50 to-red-50 rounded-xl">
+              <div hlmCardContent class="p-6">
+                <h5 class="font-bold text-rose-800 mb-2 text-lg">Delete Account</h5>
+                <p class="text-sm text-rose-700 mb-6 leading-relaxed">
+                  Once you delete your account, there is no going back. Please
+                  be certain.
+                </p>
+                <button hlmBtn variant="destructive" class="bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-700 hover:to-red-700 font-semibold px-6 py-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">Delete Account</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </hlm-tabs>
+  </div>
+</div>
